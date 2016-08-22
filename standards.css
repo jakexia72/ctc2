@@ -1,0 +1,96 @@
+h1{
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    font-weight: 700;
+    /*font-size: 36px;*/
+}
+
+h2{
+    font-family: 'Helvetica', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Helvetica', sans-serif;
+    color: #35DB96;
+    font-weight: 300;
+    font-size: 28px;   
+}
+
+h4{
+    font-family: 'Helvetica', sans-serif;
+    color: #585858;
+    font-weight: 300;
+    font-size: 28px;      
+}
+
+h5{
+    font-family: 'Helvetica', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;   
+}
+
+h6{
+    font-family: 'Helvetica', sans-serif;
+    color: #585858;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;  
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    color: #585858;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a{
+    font-family: 'Roboto', sans-serif;
+    color: #35DB96;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #759BAC; 
+    text-decoration: none;
+}
+
+/*for responsiveness*/
+@media (min-width: 858px) {
+    span {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 780px) {
+    span{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 702px) {
+    span{
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 724px) {
+    span {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 623px) {
+    span {
+        font-size: 10px;
+    }
+}

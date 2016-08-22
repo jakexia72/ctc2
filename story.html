@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <span></span>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="parallax.js-1.4.2/parallax.js"></script>
+<script src="navbar.js"></script>
+
+<head id="includedContent">
+    <title>CTC</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="description" content="Creating Change Through Code">
+    <meta name="keywords" content="Jake Xia, Curtis Chong">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="animate.css">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/20016a11b5.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="standards.css">
+</head>
+
+<style>
+</style>
+<script>
+    $(document).ready(function() {
+        //makes navbar responsive
+        $("#bannerPhoto").css("height", window.innerHeight)
+        setInterval(function() {
+
+
+            if ($("#bs-example-navbar-collapse-1").attr("aria-expanded") == true) {
+                alert("true");
+            }
+        }, 300);
+
+
+
+
+        // hide .navbar first
+        $(".navbar").hide();
+
+
+        // fade in .navbar
+        $(function() {
+            $(window).scroll(function() {
+
+                // set distance user needs to scroll before we start fadeIn
+                if ($(this).scrollTop() > $("#bannerPhoto").height()-600) {
+                    $('.navbar').fadeIn();
+                } else {
+                    $('.navbar').fadeOut();
+                }
+
+            });
+        });
+        $("#storyHeader").css("top", window.innerHeight-200);
+    });
+</script>
+
+<body>
+    <section id="storyHeader">
+
+        <div id="header-title">
+            <h1 id="storyTitle">Title of Story</h1>
+            <h3 id="storyDate">12/12/27</h3>
+        </div>
+    </section>
+    <div class="parallax-window" id="bannerPhoto" data-parallax="scroll" data-image-src="https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg"></div>
+    <div class="container">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div id="storyText">
+                <h3>This is Where the Subheading is</h3>
+                <p>This is where the text will reside.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae ornare nibh. Pellentesque nec porttitor leo, nec varius sapien. Nulla facilisi. Ut porta lacus pulvinar pharetra volutpat. Aenean in dictum augue. Cras at mi aliquet, tempus massa quis, commodo sapien. Maecenas lectus quam, lobortis at ullamcorper eu, faucibus sed velit. Vestibulum convallis tincidunt nulla, et viverra diam lacinia eget. Donec eleifend dolor a pretium molestie. In eleifend, felis non porta consequat, eros ligula consequat ipsum, nec bibendum tellus libero ullamcorper arcu. Pellentesque quis pellentesque lacus.</p>
+                <p>Quisque convallis molestie viverra. Proin felis justo, aliquam et nibh et, dignissim venenatis tellus. Nulla euismod mi in tempus dapibus. Nunc venenatis scelerisque ex sed vestibulum. Vivamus eget eros ac dolor venenatis tincidunt eu eget dolor. Integer dignissim sapien at rutrum accumsan. Vivamus eros magna, cursus ut nisl eu, venenatis mattis lorem. Suspendisse lacinia quis arcu ut molestie. Maecenas dapibus elementum nunc, aliquam lacinia velit rutrum ut.</p>
+                <p>Curabitur pulvinar aliquet vehicula. Aenean interdum rutrum enim, nec congue lacus maximus nec. Mauris commodo libero id dui faucibus, nec pretium felis feugiat. Phasellus consectetur sem libero. Maecenas ut egestas turpis, in scelerisque ipsum. Cras at congue dolor. Cras vitae aliquet lacus. Phasellus dolor erat, condimentum in ex sit amet, suscipit dictum lacus. Nullam libero metus, malesuada nec consequat id, porta vitae orci. Duis a est nec turpis faucibus laoreet eu auctor urna. Phasellus sagittis fermentum nisl, non rhoncus mauris vulputate a. Ut vel tortor massa. Fusce sodales diam in turpis bibendum sagittis. Proin dolor mauris, faucibus ac convallis nec, egestas in arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div id="moreInfo" style="background-color:#35DB96">
+        <div id="text">
+            <h1>More Information</h1>
+            <p>This is where we can include links and other information, but I'm not exactly sure what to put here yet.</p>
+        </div>
+    </div>
+</body>
+
+</html>

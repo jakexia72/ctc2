@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="parallax.js-1.4.2/parallax.js"></script>
+<head id="includedContent">
+    <title>CTC</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="description" content="Creating Change Through Code">
+    <meta name="keywords" content="Jake Xia, Curtis Chong">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="animate.css">
+
+    <link rel="shortcut icon" href="favicon.ico" />
+
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://use.fontawesome.com/20016a11b5.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="standards.css">
+</head>
+
+<body>
+    <script>
+    $(document).ready(function() {
+        //makes navbar responsive
+        $("#bannerPhoto").css("height", window.innerHeight)
+        setInterval(function() {
+
+
+            if ($("#bs-example-navbar-collapse-1").attr("aria-expanded") == true) {
+                alert("true");
+            }
+        }, 300);
+
+
+
+
+        // hide .navbar first
+        $(".navbar").hide();
+
+
+        // fade in .navbar
+        $(function() {
+            $(window).scroll(function() {
+
+                // set distance user needs to scroll before we start fadeIn
+                if ($(this).scrollTop() > $("#bannerPhoto").height()-600) {
+                    $('.navbar').fadeIn();
+                } else {
+                    $('.navbar').fadeOut();
+                }
+
+            });
+        });
+        $("#storyHeader").css("top", window.innerHeight-200);
+    });
+</script>
+    <script src="navbar.js"></script>
+    <h1 id="issuesTitle">The Green Belt</h1>
+    <div class="parallax-window" id="bannerPhoto" data-parallax="scroll" data-image-src="https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg"></div>
+     <section id="challengeInfo">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-sm-12">
+                    <p id="challengeInfoP">About the greenbelt some background info here. this is to provide ppl general info. fillter more filler and yea this is getting repetativse</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="challengeStatistics">
+        <div class="container">
+            <div class="row-fluid">
+                <div class="col-sm-4">
+                    <h2>2 Million Acres</h2>
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+                <div class="col-sm-4">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

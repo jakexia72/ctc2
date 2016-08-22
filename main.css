@@ -1,0 +1,459 @@
+body{
+    font-family: 'Helvetica', sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    background-color: black;
+}
+
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: rgb(249,249,249);
+}
+.jumbotron1{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    /*background-image: url("jumbotronBG.png");*/
+    background-size: cover;
+    background-position: center; 
+    color: #ffffff;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    
+}
+
+/*.logo{
+    float: left;
+    margin-left: 40px;
+}*/
+
+/*.logoIcon{
+    margin: 10px;
+    float: left;
+}*/
+#logoIcon{
+    position: absolute;
+    display: none;
+}
+#logoText{
+    position: relative;
+    text-align: center;
+    width: 100%;
+    right: 140px;
+}
+
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    background-color: #35DB96;
+    color: dimgrey;
+}
+
+.navbar-custom {
+    background-color: #35DB96;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.nav-link:hover {
+    background-color: #35DB96;
+    color: #35DB96;
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-custom .navbar-nav > .active > a,
+.navbar-nav > .active > a:hover,
+.navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-brand {
+    color: #eeeeee;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    color: #eeeeee;
+    background-color: white;
+}
+
+.navbar-header {
+    background-color: #35DB96;
+    height: 30px;
+}
+
+.navbar-toggle {
+    border: none;
+    background: transparent !important;
+    padding-bottom: 0px;
+    padding-top: 3px;
+}
+
+.navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+}
+
+.navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggle .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+.navbar-nav > li > a, .navbar-brand {
+    padding-top:8px !important; 
+    padding-bottom:0 !important;
+    height: 36px;
+}
+.navbar {min-height:35px !important;}
+.container-fluid{
+    padding: 0px;
+}
+
+
+/*titlescreen*/
+.tspan{
+    margin-top:0px;
+    font-size: 26px;
+    display: inline;
+    opacity: 0.01;
+    color: white;
+}
+.tsnowflake{
+    position: absolute;
+}
+#titleScreen{
+    height: 100%;
+    background-color: black;
+    background-image: url("https://static.pexels.com/photos/112531/nature-landscape-sunset-sky-112531.jpeg");
+}
+
+#introImg{
+    top: 0px;
+    position: relative;
+    width: 100%;
+}
+#introTextP{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity: 0.01;
+}
+
+#statement{
+    background-color: #bdc3c7;
+    min-height: 250px;
+}
+#statementp{
+    text-align: center;
+    margin-top: 100px;
+    color: #34495e;
+}
+#challenges{
+    background-color: #C7F0ED;
+    /*background-image: url("http://res.cloudinary.com/dfcfsw4mv/image/upload/v1470979220/DSC_0201_lboh2y.jpg");
+    height: 300px;
+    width: 100%;*/
+}
+#currentChallemgeImg{
+/*note I did inline*/
+
+}
+
+#stories{
+    background-color: #DFF5F3;/*I really like this background color*/
+}
+#upcoming{
+    background-color: #ecf0f1;
+    width: 100%;
+    text-align: center;
+    height: 250px;
+}
+#emptyUpcomingChallenges{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+#upcomingTitle{
+    position: relative;
+    top: 30px;
+}
+
+
+
+#emailCon{
+    background-color: black;
+    min-height: 250px;
+    background-color: #48A872;
+}
+#emailform{
+    padding: 5px;
+    
+    border: 1px solid #48A872;
+    border-bottom: 1px solid white;
+    margin-top: -50px;
+    position: relative;
+    color: white;
+    background-color: #48A872;
+    text-decoration: none;
+    width: 10px;
+}#emailform:focus {
+    outline: none;
+}
+#emailFormp{
+    color: white;
+    margin-top: 50px;
+    margin-left: 5px;
+    position: relative;
+}
+
+
+
+
+
+/*about*/
+#aboutIntro{
+    position: relative;
+    height: 300px;
+    background-color: #00A9B5;
+    /*background-image: url("https://static.pexels.com/photos/31084/pexels-photo-31084-large.jpg");*/
+    widows: 100%;
+    background-repeat: no-repeat;
+}
+#aboutIntroP{
+    text-align: center;
+    color: white;
+    display: none;
+    position: relative;
+    top: 150px;
+}
+.card-img-top{
+    width: 100%;
+}
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    opacity: 0.01;
+}
+
+
+#theTeam{
+    top: 0px;
+    position: relative;                             
+    background-color: #ecf0f1;
+    padding: 30px;
+}
+#questionIn{
+    width: 10px;
+    padding: 5px;
+    
+    border: 1px solid #48A872;
+    border-bottom: 1px solid white;
+    margin-top: 0px;
+    position: relative;
+    color: white;
+    background-color: #48A872;
+    text-decoration: none;
+}
+#questionIn:focus {
+    outline: none;
+}
+#aboutMoreInfo{
+    color: white;
+    position: relative;
+    margin-top: 160px;
+    width: 100%;
+    margin-left: 5px;
+}
+#inquiry{
+    height: 400px;
+    background-color: #48A872;
+    position: relative;
+    padding: none;
+    margin: 0px;
+}
+
+/*Issues*/
+#issuesTitle{
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    width: 100%;
+    color: #737373;
+    height: 0px;
+}
+#challengeInfo{
+    height: 400px;
+    background-image: url("http://www.neptis.org/sites/default/files/greenbelt/greenbelt_map_1_v_recoloured_1216_1_0.jpg");
+}
+#challengeInfoP{
+    position: relative;
+    margin-top: 180px;
+    width: 100%;
+    text-align: center;
+}
+#challengeStatistics{
+    height: 800px;
+}
+
+/*stories*/
+#storiesTitle{
+    text-align: center;
+    margin-top: 150px;
+}
+.sTitle{
+    font-size: 30px;
+    opacity: 0.01;
+}
+#storiesIntroP{
+    text-align: center;
+}
+
+
+/*story*/
+#storyHeader{
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 50px;
+}
+
+#storyText{
+    margin: 25px;
+    padding: 25px;
+}
+
+#bannerPhoto{
+    height: 600px;
+    top: 0px;
+    position: relative;
+    width: 100%;
+}
+
+#storyTitle {
+    font-size: 36px;
+    color: white;
+}
+
+#storyDate {
+    color: white;
+}
+
+
+
+
+
+
+::-webkit-input-placeholder {
+   color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: white;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: white;  
+}
+
+:-ms-input-placeholder {  
+   color: white;  
+}
+
+
+#questionAnswer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: none;
+    margin-top: 80px;
+    font-size: 18px;
+}
+#incorrectAnswer{
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: none;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
